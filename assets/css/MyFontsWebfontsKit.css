@@ -1,0 +1,36 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2756897, 2014-02-26T19:48:55-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ITC Avant Garde Gothic Std Bold by ITC
+ * URL: http://www.myfonts.com/fonts/itc/avant-garde-gothic/std-bold/
+ * Copyright: Font software Copyright 1993, 1994, 2001 Adobe Systems Incorporated. Typeface designs Copyright 2005 International Typeface Corporation. All rights reserved.
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2756897
+ * 
+ * © 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("//hello.myfonts.net/count/2a1121");*/
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("//hello.myfonts.net/count/2e2b45");*/
+
+  
+@font-face {font-family: 'AvantGardeGothicITCW01Bd';src: url('webfonts/2E2B45_0_0.eot');src: url('webfonts/2E2B45_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2E2B45_0_0.woff2') format('woff2'),url('webfonts/2E2B45_0_0.woff') format('woff'),url('webfonts/2E2B45_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AvantGardeGothicITCW02Dm';src: url('webfonts/2E2B45_1_0.eot');src: url('webfonts/2E2B45_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2E2B45_1_0.woff2') format('woff2'),url('webfonts/2E2B45_1_0.woff') format('woff'),url('webfonts/2E2B45_1_0.ttf') format('truetype');}
+
+  
+@font-face {font-family: 'ITCAvantGardeStd-Bold';src: url('webfonts/2A1121_0_0.eot');src: url('webfonts/2A1121_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2A1121_0_0.woff') format('woff'),url('webfonts/2A1121_0_0.ttf') format('truetype');}
+ 
