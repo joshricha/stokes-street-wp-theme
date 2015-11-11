@@ -368,6 +368,10 @@ html { height: 100%;}
 .nav .open > a:hover, 
 .nav .open > a:focus {background-color: transparent;}
 
+.logged-in {
+	margin-top:32px;
+}
+
 /*-------------------------------*/
 /*           Fonts            */
 /*-------------------------------*/
@@ -1027,6 +1031,9 @@ footer p {
         max-width: 65%;
         float: right;
     }
+    .logged-in {
+		margin-top:46px;
+	}
 }
 
 @media only screen and (max-width : 480px) {

@@ -19,7 +19,7 @@
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.css">
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
 <!-- text slider css -->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/slick-theme.css"/>      
@@ -55,7 +55,7 @@
 					'container'			=> 'nav',
 					'container_class'	=> 'navbar navbar-inverse navbar-fixed-top',
 					'container_id'		=> 'sidebar-wrapper',
-					'menu-class'		=> 'nav sidebar-nav'
+					'menu_class'		=> 'nav sidebar-nav'
 
 				) );
 
@@ -78,3 +78,4 @@
         
     </div>
     <!-- /#wrapper put all content in here -->
+</div><!-- Screen Reader -->
