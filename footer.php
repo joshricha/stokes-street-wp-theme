@@ -11,7 +11,37 @@
 
 ?>
 
-
+<footer>
+    <div class="container">
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Contact</h3>
+                <address>
+                    <p><b>Stokes Street Studio</b><br> 
+                    42 Stokes Street Port Melbourne <br>
+                    Victoria Australia 3207 T 613 9646 0100 <br>
+                    <a href="mailto:sayhello@stokesstreetstudio.com">sayhello@stokesstreetstudio.com</a></p>
+                </address>
+            </div>
+            <div class="col-md-8">
+                <h3>Subscribe</h3>
+                <p>Want newsletter updates and stories about what we've been doing?</p>
+                <form class="footer-subscribe" role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="NAME ">  
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL">
+                    </div>
+                    <button type="submit" class="btn btn-default">SIGN UP</button>
+                </form>
+            </div><!-- col -->
+        </div><!-- row -->
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</footer>
 
 <?php wp_footer(); ?>
 
