@@ -3,7 +3,18 @@
 	Template Name: Home Page
 */
 
-get_header(); ?>
+get_header(); 
+
+// Advanced Custom Fields
+
+// Carousel images
+$carousel_image_1 		= get_field('carousel_image_1');
+$carousel_image_2 		= get_field('carousel_image_2');
+$carousel_image_3 		= get_field('carousel_image_3');
+$carousel_image_4 		= get_field('carousel_image_4');
+$carousel_image_5 		= get_field('carousel_image_5');
+
+?>
 
 <!-- Full Page Image Background Carousel Header -->
 <section id="myCarousel" class="carousel slide">
@@ -20,9 +31,9 @@ get_header(); ?>
     <div class="carousel-inner">
         <div class="item active">
             <!-- Set the first background image using inline CSS below. -->
-            <div class="fill" style="background-image:url(<?php bloginfo('stylesheet_directory'); ?>/assets/img/bg.jpg); background-size:cover;"></div>
+            <div class="fill" style="background-image:url(<?php echo $carousel_image_1['url']; ?>); background-size:cover;"></div>
             <div class="carousel-caption">
-                <h2>Tales from the Spectrum</h2>
+                <h2><?php echo $carousel_image_1['title']; ?></h2>
             </div>
         </div>
         <div class="item">
@@ -62,6 +73,7 @@ get_header(); ?>
     <a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/scroll-down-btn.png" alt="Scroll down button"></a>
 </div><!-- Scroll btn -->
 
+
 <!-- Page Content -->
 <section id="our-work">
     <div class="container">
@@ -73,110 +85,9 @@ get_header(); ?>
         </div><!-- row -->
         <div class="work-grid">
             <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <div class="work-blocks">
-                        <a href="case-study.html" class="overlay-wrapper">
-                            <div class="overlay-text">
-                                <h3>GETTING A SCHOOLING<br>
-                                <span class="work-subtitle">MATHEW FLIDERS GIRL COLLEGE REBRANDING</span></h3>
-                            </div>
-                            <img class="img-hover" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/work/mfg.jpg" alt="MFG">
-                        </a>
-                    </div><!-- work blocks -->     
-                </div><!-- col-md-4 -->
-                <div class="col-md-4 col-sm-4">
-                    <div class="work-blocks">
-                        <a href="#" class="overlay-wrapper">
-                            <div class="overlay-text">
-                                <h3>RETHINKING FOOD & WINE AWARDS<br>
-                                <span class="work-subtitle">RASV EPICURE AWARDS BRANDING SUITE</span></h3>
-                            </div>
-                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/work/distilled-spirits.jpg" alt="Distilled Spirits">
-                        </a>
-                    </div><!-- work blocks -->   
-                </div><!-- col-md-4 -->
-                <div class="col-md-4 col-sm-4">
-                    <div class="work-blocks">
-                        <a href="#" class="overlay-wrapper">
-                            <div class="overlay-text">
-                                <h3>CREATING HISTORY FROM SCRATCH<br>
-                                <span class="work-subtitle">MANDALA WINES BRAND CREATION</span></h3>
-                            </div>
-                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/work/mandala.jpg" alt="Mandala">
-                        </a>
-                    </div><!-- work blocks -->   
-                </div><!-- col-md-4 -->
+                <?php get_template_part( 'template-parts/content', 'work' ); ?>
             </div><!-- row -->
-            <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <div class="work-blocks">
-                        <a href="#" class="overlay-wrapper">
-                            <div class="overlay-text">
-                                <h3>GVING A BOOK FOR INSTITUTION<br>
-                                <span class="work-subtitle">ST KILDA FESTIVAL FUNDRAISER CAMPAIGN</span></h3>
-                            </div>
-                            <img class="img-hover" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/work/st-kilda-festival.jpg" alt="St Kilda Festival">
-                        </a>
-                    </div><!-- work blocks -->     
-                </div><!-- col-md-4 -->
-                <div class="col-md-4 col-sm-4">
-                    <div class="work-blocks">
-                        <a href="#" class="overlay-wrapper">
-                            <div class="overlay-text">
-                                <h3>STRIPPING BACK THE SUPERFLUOUS<br>
-                                <span class="work-subtitle">HOMEGROUND ANNUAL REPORT</span></h3>
-                            </div>
-                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/work/homeground-annual-report.jpg" alt="Distilled Spirits">
-                        </a>
-                    </div><!-- work blocks -->   
-                </div><!-- col-md-4 -->
-                <div class="col-md-4 col-sm-4">
-                    <div class="work-blocks">
-                        <a href="#" class="overlay-wrapper">
-                            <div class="overlay-text">
-                                <h3>SHOWING REAL RESULTS<br>
-                                <span class="work-subtitle">MATHEW FLINDERS GIRLS COLLEGE REBRANDING</span></h3>
-                            </div>
-                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/work/mathew-flinders.jpg" alt="Mandala">
-                        </a>
-                    </div><!-- work blocks -->   
-                </div><!-- col-md-4 -->
-            </div><!-- row -->
-            <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <div class="work-blocks">
-                        <a href="#" class="overlay-wrapper">
-                            <div class="overlay-text">
-                                <h3>GVING A BOOK FOR INSTITUTION<br>
-                                <span class="work-subtitle">ST KILDA FESTIVAL FUNDRAISER CAMPAIGN</span></h3>
-                            </div>
-                            <img class="img-hover" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/work/wine-week.jpg" alt="St Kilda Festival">
-                        </a>
-                    </div><!-- work blocks -->     
-                </div><!-- col-md-4 -->
-                <div class="col-md-4 col-sm-4">
-                    <div class="work-blocks">
-                        <a href="#" class="overlay-wrapper">
-                            <div class="overlay-text">
-                                <h3>STRIPPING BACK THE SUPERFLUOUS<br>
-                                <span class="work-subtitle">HOMEGROUND ANNUAL REPORT</span></h3>
-                            </div>
-                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/work/monarch-pharmacy.jpg" alt="Distilled Spirits">
-                        </a>
-                    </div><!-- work blocks -->   
-                </div><!-- col-md-4 -->
-                <div class="col-md-4 col-sm-4">
-                    <div class="work-blocks">
-                        <a href="#" class="overlay-wrapper">
-                            <div class="overlay-text">
-                                <h3>SHOWING REAL RESULTS<br>
-                                <span class="work-subtitle">MATHEW FLINDERS GIRLS COLLEGE REBRANDING</span></h3>
-                            </div>
-                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/work/wlsn-rebrand.jpg" alt="Mandala">
-                        </a>
-                    </div><!-- work blocks -->   
-                </div><!-- col-md-4 -->
-            </div><!-- row -->
+            
         </div><!-- work grid -->
     </div><!-- container -->
 </section><!-- our work -->
