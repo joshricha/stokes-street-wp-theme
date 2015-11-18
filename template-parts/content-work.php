@@ -19,7 +19,7 @@
                         <h3><?php the_title(); ?><br>
                         <span class="work-subtitle"><?php echo $subtitle; ?></span></h3>
                     </div>
-                    <img class="img-hover" src="<?php echo $hero_image; ?>" alt="MFG">
+                    <img class="img-hover" src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>">
                 </a>
             </div><!-- work blocks -->     
         </div><!-- col-md-4 -->
@@ -27,3 +27,4 @@
     <?php endwhile; wp_reset_query(); ?>
 
 </div><!-- row -->
+
