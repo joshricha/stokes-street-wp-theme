@@ -7,36 +7,26 @@
                 <h3>Explore other Work</h3>
             </div><!-- title -->
 
+            <?php $loop = new WP_Query( array('post_type' => 'work', 'orderby' => 'post_id', 'order' => 'ASC', 'posts_per_page' => '3') ); ?>
 
+            <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
 
+                <?php 
 
-                <?php $loop = new WP_Query( array('post_type' => 'work', 'orderby' => 'post_id', 'order' => 'ASC') ); ?>
+                    // Custom Posts
+                    $subtitle       = get_field('subtitle');
+                    $hero_image     = get_field('image_1');
 
-                <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
+                ?>
 
-                    <?php 
+                <div class="col-sm-4">
+                    <a href="<?php echo get_post_permalink(); ?>" class="overlay-wrapper" target="_blank">
+                        <img src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>">
+                        <h3><?php the_title(); ?></h3>
+                    </a>
+                </div><!-- col -->
 
-                        // Custom Posts
-                        $subtitle       = get_field('subtitle');
-                        $hero_image     = get_field('image_1');
-
-                    ?>
-
-                    <div class="col-sm-4">
-                        <a href="<?php echo get_post_permalink(); ?>" class="overlay-wrapper" target="_blank">
-                            <img src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>">
-                            <h3><?php the_title(); ?></h3>
-                        </a>
-                    </div><!-- col -->
-
-                <?php endwhile; wp_reset_query(); ?>
-
-
-            
-
-
-
-
+            <?php endwhile; wp_reset_query(); ?>
 
         </div><!-- row -->
     </div><!-- container -->

@@ -953,7 +953,8 @@ footer {
 }
 
 #other-work h3 {
-    font-family: AvantGardeGothicITCW02Dm; 
+    font-family: AvantGardeGothicITCW02Dm;
+    text-transform: uppercase;
 }
 
 /*-------------------------------*/

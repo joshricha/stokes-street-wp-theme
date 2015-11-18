@@ -15,22 +15,9 @@ get_template_part( 'template-parts/content', 'carousel' );
 </div><!-- Scroll btn -->
 
 
-<!-- Page Content -->
-<section id="our-work">
-    <div class="container">
-        <div class="row">
-            <!-- Our work -->
-            <div class="col-lg-12 section-title">
-                <h3>Some of our Work</h3>
-            </div><!-- Our work -->
-        </div><!-- row -->
-        <div class="work-grid">
-            <div class="row">
-                <?php get_template_part( 'template-parts/content', 'work' ); ?>
-            </div><!-- row -->
-        </div><!-- work grid -->
-    </div><!-- container -->
-</section><!-- our work -->
+
+<?php get_template_part( 'template-parts/content', 'work' ); ?>
+
 
 
 <div class="container">
@@ -77,17 +64,7 @@ get_template_part( 'template-parts/content', 'carousel' );
 </section><!-- text box -->
 
 
-<section id="instagram-feed">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 section-title">
-                <h3>Follow us on Instagram<img class="icon-instagram" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/instagram.png" alt="Instagram"></h3>
-            </div><!-- Section title col -->
-            <div id="instafeed">
-                
-            </div><!-- instafeed -->
-        </div><!-- row -->
-    </div><!-- container -->
-</section><!-- instagram feed -->
+<?php get_template_part( 'template-parts/content', 'instagram' ); ?>
+
 
 <?php get_footer(); ?>
