@@ -378,12 +378,12 @@ html { height: 100%;}
 
 h1,h2,h3,h4,h5,h6,p,a {
     color: #727c84;
-    /*font-family: AvantGardeGothicITCW02Dm;*/
+    font-family: 'ITC Avant Garde Gothic Std Book';
     font-weight: normal; 
     font-style: normal;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, b {
     font-family: ITCAvantGardeStd-Bold;
     font-weight: normal;
     font-style: normal;
@@ -820,7 +820,11 @@ body {
 
 .carousel {
     position: static;
-}   
+}
+
+#myCarousel h2 {
+  color: #bec6cc;
+}
 
 .carousel,
 .item,

@@ -23,9 +23,23 @@
 <!-- text slider css -->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/slick-theme.css"/>      
-<!-- Google Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
+
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/MyFontsWebfontsKit.css">
+
+<!-- Font Trial -->
+<script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=215490(font-family=ITC+Avant+Garde+Gothic+Std+DemiBold+Oblique)&sid=215493(font-family=ITC+Avant+Garde+Gothic+Std+Medium)&sid=215483(font-family=ITC+Avant+Garde+Gothic+Std+Book)&sid=215491(font-family=ITC+Avant+Garde+Gothic+Std+ExtraLight)&key=rZOcSABrIK',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
+
 
 <?php wp_head(); ?>
 

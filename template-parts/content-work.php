@@ -10,7 +10,11 @@
         <div class="work-grid">
             <div class="row">
                 
-                <?php $loop = new WP_Query( array('post_type' => 'work', 'orderby' => 'post_id', 'order' => 'ASC') ); ?>
+                <?php $loop = new WP_Query( array(
+                    'post_type' => array( 'work', 'case-study' ), 
+                    'orderby' => 'post_id', 
+                    'order' => 'ASC'
+                ) ); ?>
 
                 <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
 

@@ -68,3 +68,9 @@ $image_5_title         = get_field('image_5_title');
         </div>
     </div>
 </section><!-- Carousel -->
+
+
+<!-- Scroll btn -->
+<div class="scroll-dwn-button">
+    <a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/scroll-down-btn.png" alt="Scroll down button"></a>
+</div><!-- Scroll btn -->
