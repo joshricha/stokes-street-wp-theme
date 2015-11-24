@@ -86,12 +86,12 @@ $(document).ready(function () {
 var feed = new Instafeed({
         get: 'tagged',
         clientId: 'a783ec894f4c4547a4158215883c7cf9',
-        tagName: 'printdesign',
+        tagName: 'nationalpark',
         links: true,
-        limit: 8,
+        limit: 12,
         sortBy: 'most-recent',
         resolution: 'standard_resolution',
-        template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="photo-box"><div class="image-wrap"><img src="{{image}}"></div></div></div></div>'
+        template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="photo-box"><div class="image-wrap"><img src="{{image}}"></div></div></div></div>'
 });
 feed.run();
 

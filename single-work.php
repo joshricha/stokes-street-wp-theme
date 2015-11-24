@@ -19,7 +19,7 @@ get_template_part( 'template-parts/content', 'carousel' );
 
 <!-- Page Content -->
 <!-- Work -->
-<section id="work">
+<section id="our-work">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 section-title">

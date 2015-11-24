@@ -793,7 +793,7 @@ hr {
     max-width:100%;
 }
 
-#our-work .col-sm-4, #case-study .col-sm-4, #case-study .col-sm-8 {
+#our-work .col-sm-4, #case-study .col-sm-4, #case-study .col-sm-8, #our-work .col-sm-8 {
     padding: 0;
 }
 
@@ -864,6 +864,10 @@ h2.carousel-caption {
     right: 48%;
 }
 
+.scroll-dwn-button img:hover {
+    content:url(assets/img/logo.png);
+}
+
 /* Background images are set within the HTML using inline CSS, not here */
 
 .fill {
@@ -906,13 +910,40 @@ footer {
 }
 
 .statistic {
-    padding: 10px 37%;
+    padding: 10px 6%;
     border-top: 1px solid #727c84;
     border-bottom: 1px solid #727c84;
+    font-size: 4em;
+    padding-top: 22px;
 }
 
 .thecontent, .thecontent2, .thecontent3{ 
     display:none;
+    text-align: center;
+}
+
+#text-slider .slide1 {
+    padding: 39px;
+}
+
+#text-slider .slide2 {
+    padding: 39px;
+}
+
+#text-slider .slide3 {
+    padding: 43px 27px;
+}
+
+#text-slider .slide4 {
+
+}
+
+#text-slider .slide5 {
+    padding: 43px 27px;
+}
+
+#text-slider .slide6 {
+
 }
 
 /*-------------------------------*/
@@ -921,7 +952,7 @@ footer {
 
 .box-outline {
     border: 1px solid #727c84;
-    padding: 40px;
+    padding: 55px 40px 40px 40px ;
 }
 
 .box-outline p {
