@@ -110,6 +110,32 @@ function stokesstreetstudio_widgets_init() {
 }
 add_action( 'widgets_init', 'stokesstreetstudio_widgets_init' );
 
+function footer_left_widgets_init() {
+	register_sidebar( array(
+	    'name' => __( 'Left Footer', 'stokesstreetstudio' ),
+	    'id' => 'footer-left',
+	    'description' => __( 'Information for the header', 'stokesstreetstudio' ),
+	    'before_widget' => '<div class="col-md-4">',
+	    'after_widget' => '</div><!-- col -->',
+	    'before_title' => '<h3 class="widget-title-left">',
+	    'after_title' => '</h3>',
+	) );
+}
+add_action( 'widgets_init', 'footer_left_widgets_init' );
+
+function footer_right_widgets_init() {
+	register_sidebar( array(
+	    'name' => __( 'Right Footer', 'stokesstreetstudio' ),
+	    'id' => 'footer-right',
+	    'description' => __( 'Please add something for the right column in the footer', 'stokesstreetstudio' ),
+	    'before_widget' => '<div class="col-md-8">',
+	    'after_widget' => '</div><!-- col -->',
+	    'before_title' => '<h3 class="widget-title-right">',
+	    'after_title' => '</h3>',
+	) );
+}
+add_action( 'widgets_init', 'footer_right_widgets_init' );
+
 /**
  * Enqueue scripts and styles.
  */

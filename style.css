@@ -865,7 +865,7 @@ h2.carousel-caption {
 }
 
 .scroll-dwn-button img:hover {
-    content:url(assets/img/logo.png);
+    content:url(assets/img/scroll-down-btn-hover.png);
 }
 
 /* Background images are set within the HTML using inline CSS, not here */
