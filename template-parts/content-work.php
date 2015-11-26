@@ -11,7 +11,7 @@
             <div class="row">
                 
                 <?php $loop = new WP_Query( array(
-                    'post_type' => array( 'work', 'case-study' ), 
+                    'post_type' => 'work', 
                     'orderby' => 'post_id', 
                     'order' => 'ASC'
                 ) ); ?>
