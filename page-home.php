@@ -1,16 +1,16 @@
 <?php
-/*
-	Template Name: Home Page
-*/
 
-get_header(); 
+	/*
+		Template Name: Home Page
+	*/
 
-get_template_part( 'template-parts/content', 'carousel' ); 
+	get_header(); 
+
+	get_template_part( 'template-parts/content', 'carousel' );
+
+	get_template_part( 'template-parts/content', 'work' );
 
 ?>
-
-
-<?php get_template_part( 'template-parts/content', 'work' ); ?>
 
 
 <div class="container">
@@ -18,13 +18,14 @@ get_template_part( 'template-parts/content', 'carousel' );
 </div><!-- Line break -->
 
 
-<?php get_template_part( 'template-parts/content', 'textslider' ); ?>
+<?php 
 
+	get_template_part( 'template-parts/content', 'textslider' );
 
-<?php get_template_part( 'template-parts/content', 'borderbox' ); ?>
+	get_template_part( 'template-parts/content', 'borderbox' );
 
+	get_template_part( 'template-parts/content', 'instagram' );
 
-<?php get_template_part( 'template-parts/content', 'instagram' ); ?>
+	get_footer(); 
 
-
-<?php get_footer(); ?>
+?>

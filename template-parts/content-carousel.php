@@ -1,12 +1,10 @@
 <?php
 
-// Advanced Custom Fields
+    // Carousel images
+    $carousel_image_1 		= get_field('carousel_image_1');
 
-// Carousel images
-$carousel_image_1 		= get_field('carousel_image_1');
-
-// Carousel titles
-$image_1_title         = get_field('image_1_title');
+    // Carousel titles
+    $image_1_title         = get_field('image_1_title');
 
 ?>
 
