@@ -15,23 +15,6 @@ for ($i = 1; $i <= $numVideos; $i++) {
 }
 
 
-// Video embeds
-$image_1_video      = get_field('image_1_do_you_wish_to_add_a_video');
-$video_embed_code_1 = get_field('video_embed_code_1');
-
-$image_2_video      = get_field('image_2_do_you_wish_to_add_a_video');
-$video_embed_code_2 = get_field('video_embed_code_2');
-
-$image_3_video      = get_field('image_3_do_you_wish_to_add_a_video');
-$video_embed_code_3 = get_field('video_embed_code_3');
-
-$image_4_video      = get_field('image_4_do_you_wish_to_add_a_video');
-$video_embed_code_4 = get_field('video_embed_code_4');
-
-$image_5_video      = get_field('image_5_do_you_wish_to_add_a_video');
-$video_embed_code_5 = get_field('video_embed_code_5');
-
-
 // General
 $about              = get_field('about');
 $subtitle           = get_field('subtitle');
