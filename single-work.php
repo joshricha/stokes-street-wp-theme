@@ -1,5 +1,23 @@
 <?php get_header();
 
+
+
+$numVideos = 5;
+
+$grid_image_array       = array();
+$image_video_array      = array();
+$video_embed_code_array = array();
+
+for ($i = 1; $i <= $numVideos; $i++) {
+    $grid_image_array[$i]       = get_field('image_' . $i);
+    $image_video_array[$i]      = get_field('image_' . $i . '_do_you_wish_to_add_a_video');
+    $video_embed_code_array[$i] = get_field('video_embed_code_' . $i);
+}
+
+
+
+
+
 // Advanced Custom Fields
 
 // Grid images or videos
@@ -27,6 +45,7 @@ $image_5_video      = get_field('image_5_do_you_wish_to_add_a_video');
 $video_embed_code_5 = get_field('video_embed_code_5');
 
 
+// General
 $about              = get_field('about');
 $subtitle           = get_field('subtitle');
 
@@ -119,111 +138,26 @@ get_template_part( 'template-parts/content', 'carousel' );
     </div><!-- container -->
 </section><!-- work -->
 
-
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Video</h4>
-            </div>
-            <div class="modal-body">
-                <iframe src=" <?php echo $video_embed_code_1; ?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+<?php for ($i = 1; $i <= $numVideos; $i++) : ?>    
+    <div id="myModal<?= $i ?>" class="modal fade" role="dialog">
+        <div class="modal-dialog">    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Video</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe src=" <?php echo $video_embed_code_array[$i]; ?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>    
         </div>
-
-    </div>
-</div>
-
-<!-- Modal 2 -->
-<div id="myModal2" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Video</h4>
-            </div>
-            <div class="modal-body">
-                <iframe src=" <?php echo $video_embed_code_1; ?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- Modal 3 -->
-<div id="myModal3" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Video</h4>
-            </div>
-            <div class="modal-body">
-                <iframe src=" <?php echo $video_embed_code_3; ?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- Modal 4 -->
-<div id="myModal4" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Video</h4>
-            </div>
-            <div class="modal-body">
-                <iframe src=" <?php echo $video_embed_code_4; ?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- Modal 5 -->
-<div id="myModal5" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Video</h4>
-            </div>
-            <div class="modal-body">
-                <iframe src=" <?php echo $video_embed_code_5; ?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-
-    </div>
-</div>
+    </div>    
+<?php endfor; ?><!-- Modal -->
 
 
 <?php get_template_part( 'template-parts/content', 'otherwork' ); ?>
