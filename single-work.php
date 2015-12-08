@@ -37,7 +37,7 @@ get_template_part( 'template-parts/content', 'carousel' );
             <div class="row">
                 <div class="col-sm-4">
 
-                    <?php if( $image_1_video == "Yes" ): ?>
+                    <?php if( $image_video_array[1] == "Yes" ): ?>
                         <a data-toggle="modal" data-target="#myModal1" href="#">
                             <img src="<?php echo $grid_image_array[1]['url']; ?>" alt="<?php echo $grid_image_array[1]['alt']; ?>">
                         </a>
@@ -48,7 +48,7 @@ get_template_part( 'template-parts/content', 'carousel' );
                 </div><!-- col -->
                 <div class="col-sm-4">
 
-                    <?php if( $image_2_video == "Yes" ): ?>
+                    <?php if( $image_video_array[2] == "Yes" ): ?>
                         <a data-toggle="modal" data-target="#myModal2" href="#">
                             <img src="<?php echo $grid_image_array[2]['url']; ?>" alt="<?php echo $grid_image_array[2]['alt']; ?>">
                         </a>
@@ -59,7 +59,7 @@ get_template_part( 'template-parts/content', 'carousel' );
                 </div><!-- col -->
                 <div class="col-sm-4">
                     
-                    <?php if( $image_3_video == "Yes" ): ?>
+                    <?php if( $image_video_array[3] == "Yes" ): ?>
                         <a data-toggle="modal" data-target="#myModal2" href="#">
                             <img src="<?php echo $grid_image_array[3]['url']; ?>" alt="<?php echo $grid_image_array[3]['alt']; ?>">
                         </a>
@@ -72,7 +72,7 @@ get_template_part( 'template-parts/content', 'carousel' );
             <div class="row">
                 <div class="col-sm-8">
 
-                    <?php if( $image_4_video == "Yes" ): ?>
+                    <?php if( $image_video_array[4] == "Yes" ): ?>
                         <a data-toggle="modal" data-target="#myModal2" href="#">
                             <img src="<?php echo $grid_image_array[4]['url']; ?>" alt="<?php echo $grid_image_array[4]['alt']; ?>">
                         </a>
@@ -83,7 +83,7 @@ get_template_part( 'template-parts/content', 'carousel' );
                 </div><!-- col -->
                 <div class="col-sm-4">
 
-                    <?php if( $image_5_video == "Yes" ): ?>
+                    <?php if( $image_video_array[5] == "Yes" ): ?>
                         <a data-toggle="modal" data-target="#myModal2" href="#">
                             <img src="<?php echo $grid_image_array[5]['url']; ?>" alt="<?php echo $grid_image_array[5]['alt']; ?>">
                         </a>
