@@ -60,7 +60,7 @@ get_template_part( 'template-parts/content', 'herofullscreen' );
                 <div class="col-sm-4">
                     
                     <?php if( $image_video_array[3] == "Yes" ): ?>
-                        <a data-toggle="modal" data-target="#myModal2" href="#">
+                        <a data-toggle="modal" data-target="#myModal3" href="#">
                             <img src="<?php echo $grid_image_array[3]['url']; ?>" alt="<?php echo $grid_image_array[3]['alt']; ?>">
                         </a>
                     <?php else: ?>
@@ -73,7 +73,7 @@ get_template_part( 'template-parts/content', 'herofullscreen' );
                 <div class="col-sm-8">
 
                     <?php if( $image_video_array[4] == "Yes" ): ?>
-                        <a data-toggle="modal" data-target="#myModal2" href="#">
+                        <a data-toggle="modal" data-target="#myModal4" href="#">
                             <img src="<?php echo $grid_image_array[4]['url']; ?>" alt="<?php echo $grid_image_array[4]['alt']; ?>">
                         </a>
                     <?php else: ?>
@@ -84,7 +84,7 @@ get_template_part( 'template-parts/content', 'herofullscreen' );
                 <div class="col-sm-4">
 
                     <?php if( $image_video_array[5] == "Yes" ): ?>
-                        <a data-toggle="modal" data-target="#myModal2" href="#">
+                        <a data-toggle="modal" data-target="#myModal5" href="#">
                             <img src="<?php echo $grid_image_array[5]['url']; ?>" alt="<?php echo $grid_image_array[5]['alt']; ?>">
                         </a>
                     <?php else: ?>

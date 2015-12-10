@@ -532,7 +532,7 @@ hr {
 .sidebar-nav li:nth-child(9):before {
     background-color: #bec6cc;   
 }
-.sidebar-nav li:hover:before,
+/*.sidebar-nav li:hover:before,
 .sidebar-nav li.open:hover:before {
     width: 100%;
     -webkit-transition: width .2s ease-in;
@@ -540,7 +540,7 @@ hr {
        -ms-transition:  width .2s ease-in;
             transition: width .2s ease-in;
 
-}
+}*/
 
 .sidebar-nav li a {
     display: block;
