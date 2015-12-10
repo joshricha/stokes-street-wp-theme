@@ -64,5 +64,5 @@
 
 <!-- Scroll btn -->
 <div class="scroll-dwn-button">
-    <a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/scroll-down-btn.png" alt="Scroll down button"></a>
+    <a href="#"><img width="80" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/scroll-down-btn.png" alt="Scroll down button"></a>
 </div><!-- Scroll btn -->
