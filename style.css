@@ -410,7 +410,8 @@ section {
   border-top: 1px solid #727c84;
   border-bottom: 1px solid #727c84;
   padding: 20px 0px 13px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 hr {
@@ -714,7 +715,7 @@ hr {
 .logo {
   float:right;
   padding: 30px;
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 20px;
   z-index: 999;
@@ -918,10 +919,12 @@ footer {
 /*-------------------------------*/
 
 #text-slider p {
-    border: 1px solid #727c84;
     padding: 25px;
-    min-height: 360px;
-    font-size: 25px;
+    font-size: 22px;
+}
+
+.box-border-grey {
+    border: 1px solid #727c84;
 }
 
 .slick-slider .slick-list {
@@ -941,16 +944,12 @@ footer {
     text-align: center;
 }
 
-#text-slider .slide1 {
-    padding: 39px;
-}
-
-#text-slider .slide2 {
-    padding: 39px;
+#text-slider .slide1, #text-slider .slide2 {
+    padding: 30px;
 }
 
 #text-slider .slide3 {
-    padding: 43px 27px;
+    padding: 34px 11px;
 }
 
 #text-slider .slide4 {
@@ -971,11 +970,11 @@ footer {
 
 .box-outline {
     border: 1px solid #727c84;
-    padding: 55px 40px 40px 40px ;
+    padding: 35px 25px 25px 25px;
 }
 
 .box-outline p {
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -1078,21 +1077,75 @@ footer p {
 
 }
 
-@media only screen and (max-width : 979px) {
+@media only screen and (max-width : 991px) {
+    #text-slider p, .box-outline p {
+        font-size: 17px;
+        min-height: auto !important;
+    }
+    #text-slider .box-border-grey {
+      margin-bottom: 20px;
+    }
+    #text-slider, #instagram-feed {
+      padding-bottom: 0;
+    }
+    #text-box {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
 
+    .box-outline {
+        padding: 43px 30px 30px 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+
+    .icon-instagram {
+          max-height: 33px;
+    }
+    #logo-img {
+        max-width: 60%;
+    }
+    .logo {
+        float: right;
+        padding: 15px 0 15px 0;
+        top: 10px;
+        right: -68px;
+        z-index: 999;
+    }
 }
 
 @media only screen and (max-width : 767px) {
+
     #logo-img {
         max-width: 65%;
         float: right;
     }
+
+    .logo {
+        right: 20px;
+    }
+
     .logged-in {
-		margin-top:46px;
+		    margin-top:46px;
 	  }
-    .work-blocks img, #other-work img {
+
+    .work-blocks img, #other-work img, .work-images img {
         width: 100%;
     }
+
+    .footer-subscribe button {
+        width: 26%; 
+    }
+
+    .scroll-dwn-button {
+      right: 40%;
+      max-width: 74%;
+    }
+
 }
 
 @media only screen and (max-width : 480px) {
@@ -1102,3 +1155,15 @@ footer p {
 @media only screen and (max-width : 320px) {
 
 }
+
+
+@media only screen and (min-width : 980px) {
+
+  #text-slider p {
+      min-height: 306px;
+  }
+
+}
+
+
+

@@ -36,6 +36,7 @@
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/instafeed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/smoothScroll.js"></script>
 
 </body>
 </html>

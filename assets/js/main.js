@@ -88,15 +88,33 @@ $(document).ready(function () {
           links: true,
           limit: 12,
           sortBy: 'most-recent',
-          resolution: 'standard_resolution',
+          resolution: 'low_resolution',
           template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="photo-box"><div class="image-wrap"><img src="{{image}}"></div></div></div></div>'
   });
   feed.run();
 
 });
 
+$('.single-case-study .scroll-dwn-button a').on('click', function() {
+    $.smoothScroll({
+      scrollTarget: '#case-study'
+    });
+    return false;
+  });
 
+$('.page-template-page-home .scroll-dwn-button a').on('click', function() {
+    $.smoothScroll({
+      scrollTarget: '#our-work'
+    });
+    return false;
+  });
 
+$('.single-work .scroll-dwn-button a').on('click', function() {
+    $.smoothScroll({
+      scrollTarget: '#our-work'
+    });
+    return false;
+  });
 
 
     

@@ -23,20 +23,37 @@
                         // Custom Posts
                         $subtitle       = get_field('subtitle');
                         $hero_image     = get_field('image_1');
+                        $one_homepage_image = get_field('do_you_wish_to_add_more_than_one_homepage_image');
 
                     ?>
 
-                    <div class="col-md-4 col-sm-4">
-                        <div class="work-blocks">
-                            <a href="<?php echo get_post_permalink(); ?>" class="overlay-wrapper" target="_blank">
+                    <?php if ($one_homepage_image == false): ?>   
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="work-blocks">
+                                <a href="<?php echo get_post_permalink(); ?>" class="overlay-wrapper" target="_blank">
+                                    <div class="overlay-text">
+                                        <h3><?php the_title(); ?><br>
+                                        <span class="work-subtitle"><?php echo $subtitle; ?></span></h3>
+                                    </div>
+                                    <img class="img-hover" src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>">
+                                </a>
+                            </div><!-- work blocks -->     
+                        </div><!-- col-md-4 -->
+
+                    <?php else : ?>
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="work-blocks">
                                 <div class="overlay-text">
                                     <h3><?php the_title(); ?><br>
                                     <span class="work-subtitle"><?php echo $subtitle; ?></span></h3>
                                 </div>
                                 <img class="img-hover" src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>">
-                            </a>
-                        </div><!-- work blocks -->     
-                    </div><!-- col-md-4 -->
+                            </div><!-- work blocks -->     
+                        </div><!-- col-md-4 -->
+
+                    <?php endif ?>
 
                 <?php endwhile; wp_reset_query(); ?>
 

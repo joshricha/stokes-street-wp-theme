@@ -4,7 +4,7 @@ $hero_image		= get_field('carousel_image_1');
 
  ?>
 
-<div style="background: url(<?php echo $hero_image['url']; ?>) no-repeat center center;" class="hero-background">
+<div style="background: url(<?php echo $hero_image['url']; ?>) no-repeat center center; background-size: cover;" class="hero-background">
 
 	<!-- Scroll btn -->
 	<div class="scroll-dwn-button">

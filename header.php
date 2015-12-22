@@ -63,17 +63,20 @@
 
 			<?php 
 
-				wp_nav_menu( array(
 
-					'theme_location'	=> 'primary',
-					'container'			=> 'nav',
-					'container_class'	=> 'navbar navbar-inverse navbar-fixed-top',
-					'container_id'		=> 'sidebar-wrapper',
-					'menu_class'		=> 'nav sidebar-nav'
-
-				) );
+			wp_nav_menu( array(
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'nav',
+                'container_class'   => 'navbar navbar-inverse navbar-fixed-top',
+        		'container_id'      => 'sidebar-wrapper',
+                'menu_class'        => 'nav sidebar-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            );
 
 			 ?>
+
 
 	        <div id="page-content-wrapper">
 	            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
@@ -84,7 +87,7 @@
 	        </div>
 	        <!-- /#page-content-wrapper -->
 	        <div class="logo">
-                <img id="logo-img" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Stokes Street Studio logo">
+                <a href="/"><img id="logo-img" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Stokes Street Studio logo"></a>
             </div>
         </header>
 
