@@ -32,21 +32,21 @@ get_template_part( 'template-parts/content', 'whitebackscreen' );
 		<div class="container">
 		    <div class="row">
 		        <div class="col-md-4">
-		            <div class="box-border-grey ">
+		            <div class="box-border-grey box-border-grey2">
 		            	<p>
 		            		<?php echo $text_box_1 ?>
 		            	</p>
 		            </div>
 		        </div><!-- col -->
 		        <div class="col-md-4">
-		            <div class="box-border-grey">
+		            <div class="box-border-grey box-border-grey2">
 		            	<p>
 		            		<?php echo $text_box_2 ?>
 		            	</p>
 		            </div>
 		        </div><!-- col -->
 		        <div class="col-md-4">
-		            <div class="box-border-grey">
+		            <div class="box-border-grey box-border-grey2">
 		            	<p>
 		            		<?php echo $text_box_3 ?>
 		            	</p>
@@ -55,21 +55,21 @@ get_template_part( 'template-parts/content', 'whitebackscreen' );
 		    </div><!-- row -->
 		    <div class="row">
 		        <div class="col-md-4">
-		            <div class="box-border-grey ">
+		            <div class="box-border-grey box-border-grey2">
 		            	<p>
 		            		<?php echo $text_box_4 ?>
 		            	</p>
 		            </div>
 		        </div><!-- col -->
 		        <div class="col-md-4">
-		            <div class="box-border-grey">
+		            <div class="box-border-grey box-border-grey2">
 		            	<p>
 		            		<?php echo $text_box_5 ?>
 		            	</p>
 		            </div>
 		        </div><!-- col -->
 		        <div class="col-md-4">
-		            <div class="box-border-grey">
+		            <div class="box-border-grey box-border-grey2">
 		            	<p>
 		            		<?php echo $text_box_6 ?>
 		            	</p>

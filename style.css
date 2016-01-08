@@ -889,6 +889,10 @@ h2.carousel-caption {
     right: 48%;
 }
 
+.scroll-dwn-button a, img.book {
+  z-index: 999;
+}
+
 .title {
     position: absolute;
     right: 0;
@@ -898,10 +902,12 @@ h2.carousel-caption {
 }
 
 .scroll-dwn-button img:hover {
+    z-index: 9999;
     content:url(assets/img/scroll-down-btn-hover.png);
 }
 
 img.book:hover {
+    z-index: 9999;
   content: url(assets/img/book-hover.png);
 }
 
@@ -960,6 +966,10 @@ span.yellow {
 .box-border-grey {
     border: 1px solid #727c84;
     margin-bottom: 20px;
+    min-height: 222px;
+}
+
+.box-border-grey2 {
     min-height: 360px;
 }
 
@@ -1007,6 +1017,7 @@ span.yellow {
 .box-outline {
     border: 1px solid #727c84;
     padding: 35px 25px 25px 25px;
+    text-align: center;
 }
 
 .box-outline p {
@@ -1053,10 +1064,6 @@ span.yellow {
 #work-text p {
     font-size: 25px;
     text-align: center;
-}
-
-#other-work h3 {
-    font-family: AvantGardeGothicITCW01Bk;
 }
 
 /*-------------------------------*/
@@ -1212,9 +1219,9 @@ footer p {
 
 @media only screen and (min-width : 980px) {
 
-  #text-slider p {
+/*  #text-slider p {
       min-height: 306px;
-  }
+  }*/
 
 }
 
