@@ -29,7 +29,7 @@ get_template_part( 'template-parts/content', 'herofullscreen' );
     <div class="container">
         <div class="row">
             <div class="col-lg-12 section-title">
-                <h3><?php the_title(); ?></h3>
+                <h3><?php echo "Case Study: "; the_title(); ?></h3>
             </div><!-- title -->
         </div><!-- row -->
         <div class="work-images">

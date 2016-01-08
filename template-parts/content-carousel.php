@@ -48,10 +48,13 @@
 
                 <div class="item <?php echo $class ?> <?php echo "slide_" . $slide_counter ?>">
                     <!-- Set the first background image using inline CSS below. -->
+                    <a href="<?php echo get_post_permalink(); ?>" target="_blank">
                     <div class="fill" style="background-image:url(<?php echo $carousel_image_1['url']; ?>); background-size:cover;" alt="<?php echo $carousel_image_1['alt']; ?>"> </div>
                     <div class="carousel-caption">
-                        <h2><a href="<?php echo get_post_permalink(); ?>" target="_blank"><?php echo $image_1_title; ?></a></h2>
+                        <h2><?php echo $image_1_title; ?></h2>
+                        <img width="80" class="book" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/book.png" alt="">
                     </div>
+                    </a>
                 </div>
 
                 <?php $slide_counter++; ?>

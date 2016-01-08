@@ -12,7 +12,7 @@ $paragraph       = get_field('paragraph');
         <div class="row">
             <div class="col-md-12">
                 <div class="box-outline">
-                    <p><?php echo $header; ?></p>
+                    <h3><?php echo $header; ?></h3>
                     <p><?php echo $paragraph; ?></p>
                 </div><!-- box outline -->
             </div><!-- col -->

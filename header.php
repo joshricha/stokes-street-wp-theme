@@ -24,21 +24,40 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/slick-theme.css"/>      
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/MyFontsWebfontsKit.css">
+<!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/MyFontsWebfontsKit.css"> -->
 
-<!-- Font Trial -->
-<script type="text/javascript">
-    (function() {
-        var path = '//easy.myfonts.net/v2/js?sid=215490(font-family=ITC+Avant+Garde+Gothic+Std+DemiBold+Oblique)&sid=215493(font-family=ITC+Avant+Garde+Gothic+Std+Medium)&sid=215483(font-family=ITC+Avant+Garde+Gothic+Std+Book)&sid=215491(font-family=ITC+Avant+Garde+Gothic+Std+ExtraLight)&key=rZOcSABrIK',
-            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-            trial = document.createElement('script');
-        trial.type = 'text/javascript';
-        trial.async = true;
-        trial.src = protocol + path;
-        var head = document.getElementsByTagName("head")[0];
-        head.appendChild(trial);
-    })();
-</script>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3144927, 2015-12-22T18:38:47-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AvantGardeGothicITCW01Bk by ITC
+ * URL: http://www.myfonts.com/fonts/itc/avant-garde-gothic/std-book/
+ * 
+ * Webfont: AvantGardeGothicITCW02XLt by ITC
+ * URL: http://www.myfonts.com/fonts/itc/avant-garde-gothic/std-extra-light/
+ * 
+ * Webfont: AvantGardeGothicITCW02Md by ITC
+ * URL: http://www.myfonts.com/fonts/itc/avant-garde-gothic/std-medium/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3144927
+ * Licensed pageviews: 250,000
+ * Webfonts copyright: Font software Copyright 1993, 1994, 2001 Adobe Systems
+ * Incorporated. Typeface designs Copyright 2005 International Typeface Corporation. All
+ * rights reserved.
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+-->
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/MyFontsWebfontsKit.css">
 
 
 <?php wp_head(); ?>

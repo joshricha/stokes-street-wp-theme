@@ -368,23 +368,35 @@ html { height: 100%;}
 .nav .open > a:hover, 
 .nav .open > a:focus {background-color: transparent;}
 
-.logged-in {
-	margin-top:32px;
-}
-
 /*-------------------------------*/
 /*           Fonts            */
 /*-------------------------------*/
 
+.AvantGardeGothicITCW01Bk { 
+  font-family: AvantGardeGothicITCW01Bk;
+  font-weight: normal;
+  font-style: normal;
+}
+.AvantGardeGothicITCW02XLt { 
+  font-family: AvantGardeGothicITCW02XLt;
+  font-weight: normal;
+  font-style: normal;
+}
+.AvantGardeGothicITCW02Md { 
+  font-family: AvantGardeGothicITCW02Md;
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1,h2,h3,h4,h5,h6,p,a {
     color: #727c84;
-    font-family: 'ITC Avant Garde Gothic Std Book';
+    font-family: AvantGardeGothicITCW01Bk;
     font-weight: normal; 
     font-style: normal;
 }
 
 h1,h2,h3,h4,h5,h6, b, h2 a {
-    font-family: ITCAvantGardeStd-Bold;
+    font-family: AvantGardeGothicITCW02Md;
     font-weight: normal;
     font-style: normal;
 }
@@ -395,7 +407,7 @@ h2 {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 23px;
 }
 
 /*-------------------------------*/
@@ -403,15 +415,15 @@ h3 {
 /*-------------------------------*/
 
 section {
-  padding: 25px 0;
+  padding: 0 0 25px 0;
 }
 
 .section-title h3 {
   border-top: 1px solid #727c84;
   border-bottom: 1px solid #727c84;
   padding: 20px 0px 13px;
-  margin-bottom: 20px;
-  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 hr {
@@ -584,7 +596,7 @@ hr {
 .hamburger {
   position: fixed;
   top: 20px;  
-  z-index: 999;
+  z-index: 9999;
   display: block;
   width: 32px;
   height: 32px;
@@ -721,6 +733,21 @@ hr {
   z-index: 999;
 }
 
+.logo.small img {
+    font-size: 15px;
+    width: 70%;
+    -webkit-transition: width 1s; 
+    -moz-transition: width 1s; 
+    -ms-transition: width 1s; 
+    -o-transition: width 1s; 
+    transition: width 1s; 
+    float: right;
+}
+
+.logo-img {
+  z-index: 0;
+}
+
 /*-------------------------------*/
 /*            Our work           */
 /*-------------------------------*/
@@ -749,28 +776,13 @@ hr {
     align-items: center;
     margin: 0;
     padding: 15px;
+     display: -webkit-inline-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
 }
 
-.overlay-text {
-    position: absolute;
-    top: 0;
-    background-color:rgba(0,0,0,0.4);
-    width: 100%;
-    color: #fff;
-    height: 100%;
-    line-height:100%;
-    text-align: center;
-    z-index: 10;
-    opacity: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 15px;
+.overlay-text a {
+  text-decoration: none;
 }
 
 .overlay-text:hover {
@@ -790,12 +802,20 @@ hr {
   font-weight: normal;
 }
 
+#case-study {
+  margin-top: 25px; 
+}
+
 #our-work img, #case-study img {
     max-width:100%;
 }
 
 #our-work .col-sm-4, #case-study .col-sm-4, #case-study .col-sm-8, #our-work .col-sm-8 {
     padding: 0;
+}
+
+#our-work {
+    margin-top: 20px;
 }
 
 .work-grid, .case-study-images {
@@ -869,10 +889,20 @@ h2.carousel-caption {
     right: 48%;
 }
 
-
+.title {
+    position: absolute;
+    right: 0;
+    margin-top: 200px;
+    padding-right: 40px;
+    text-align: right;
+}
 
 .scroll-dwn-button img:hover {
     content:url(assets/img/scroll-down-btn-hover.png);
+}
+
+img.book:hover {
+  content: url(assets/img/book-hover.png);
 }
 
 /* Background images are set within the HTML using inline CSS, not here */
@@ -906,7 +936,7 @@ footer {
 /*-------------------------------*/
 
 .hero-background {
-    height:100vh;
+    height:103vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -918,6 +948,10 @@ footer {
 /*      Text Box Slider          */
 /*-------------------------------*/
 
+span.yellow {
+  color: #fff200;
+}
+
 #text-slider p {
     padding: 25px;
     font-size: 22px;
@@ -925,6 +959,8 @@ footer {
 
 .box-border-grey {
     border: 1px solid #727c84;
+    margin-bottom: 20px;
+    min-height: 360px;
 }
 
 .slick-slider .slick-list {
@@ -979,6 +1015,16 @@ footer {
 }
 
 /*-------------------------------*/
+/*      About us Text Box        */
+/*-------------------------------*/
+
+
+.page-template-page-aboutus .box-border-grey {
+    padding: 30px;
+    font-size: 22px;
+}
+
+/*-------------------------------*/
 /*      Instagram                */
 /*-------------------------------*/
 
@@ -992,6 +1038,10 @@ footer {
     height: auto;
 }
 
+#instagram-feed .section-title {
+  margin-bottom: 20px;
+}
+
 /*-------------------------------*/
 /*      Other Work               */
 /*-------------------------------*/
@@ -1002,13 +1052,11 @@ footer {
 
 #work-text p {
     font-size: 25px;
-    text-transform: uppercase;
     text-align: center;
 }
 
 #other-work h3 {
-    font-family: AvantGardeGothicITCW02Dm;
-    text-transform: uppercase;
+    font-family: AvantGardeGothicITCW01Bk;
 }
 
 /*-------------------------------*/
@@ -1032,7 +1080,7 @@ footer p {
 .footer-subscribe .form-group {
     display: inline-block;
     width: 32%;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .form-control {
@@ -1042,8 +1090,9 @@ footer p {
     border-radius: 0px; /* future proofing */
     -khtml-border-radius: 0px; /* for old Konqueror browsers */
     text-align: center;
-    padding: 18px 12px;
+    padding: 8px 12px;
     color: #bdc2c5;
+    height: 38px;
 }
 
 .form-control:focus {
@@ -1063,6 +1112,7 @@ footer p {
     padding: 8px 12px;
     background: #727c84;
     color: #fff;
+    float: right;
 }
 
 /*-------------------------------*/
@@ -1078,11 +1128,11 @@ footer p {
 }
 
 @media only screen and (max-width : 991px) {
-    #text-slider p, .box-outline p {
+    #text-slider p, .box-outline p, .page-template-page-aboutus .box-border-grey {
         font-size: 17px;
         min-height: auto !important;
     }
-    #text-slider .box-border-grey {
+    #text-slider .box-border-grey, .page-template-page-aboutus .box-border-grey {
       margin-bottom: 20px;
     }
     #text-slider, #instagram-feed {
@@ -1149,7 +1199,10 @@ footer p {
 }
 
 @media only screen and (max-width : 480px) {
-
+  #instagram-feed .section-title h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width : 320px) {

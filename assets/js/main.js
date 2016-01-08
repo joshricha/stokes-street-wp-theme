@@ -82,9 +82,9 @@ $(document).ready(function () {
 
   // instagram feed
   var feed = new Instafeed({
-          get: 'tagged',
-          clientId: 'a783ec894f4c4547a4158215883c7cf9',
-          tagName: 'nationalpark',
+          get: 'user',
+          userId: '2348630175',
+          accessToken: '2348630175.5b9e1e6.d1353fcc3ded4c42a939b15069bf4bfe',
           links: true,
           limit: 12,
           sortBy: 'most-recent',
@@ -93,6 +93,14 @@ $(document).ready(function () {
   });
   feed.run();
 
+});
+
+$(window).scroll(function(){
+  if($(document).scrollTop() > 0) {
+      $('.logo').addClass('small');
+  } else {
+      $('.logo').removeClass('small');
+  }
 });
 
 $('.single-case-study .scroll-dwn-button a').on('click', function() {
@@ -109,12 +117,21 @@ $('.page-template-page-home .scroll-dwn-button a').on('click', function() {
     return false;
   });
 
+$('.page-template-page-aboutus .scroll-dwn-button a').on('click', function() {
+    $.smoothScroll({
+      scrollTarget: '#about-boxes'
+    });
+    return false;
+  });
+
 $('.single-work .scroll-dwn-button a').on('click', function() {
     $.smoothScroll({
       scrollTarget: '#our-work'
     });
     return false;
   });
+
+
 
 
     

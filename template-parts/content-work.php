@@ -13,7 +13,8 @@
                 <?php $loop = new WP_Query( array(
                     'post_type' => 'work', 
                     'orderby' => 'post_id', 
-                    'order' => 'ASC'
+                    'order' => 'ASC',
+                    'posts_per_page' => 12
                 ) ); ?>
 
                 <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
